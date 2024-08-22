@@ -13,6 +13,8 @@ class AppContainer extends HTMLElement {
 
     render(){
         this.shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="./src/components/card/card.css">
+        <section class="containerBig">
         <product-card 
         img = "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_1920,q_auto:low/kj6n1mmv5i3yqjvk6f56" 
         title= "The Legend of Zelda amiibo"
@@ -33,6 +35,7 @@ class AppContainer extends HTMLElement {
         description= "Disfruta de los juegos de Nintendo 64 de la forma en que se deben jugar: Con un mando inalambrico de tamaño completo de Nintendo 64!"
         txtbutton= "Comprar"
         ></product-card>
+        </section>
         `
         ;
         
